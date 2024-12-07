@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import AppThemeProvider from "@/components/theme/AppThemeProvider";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import type { Metadata } from "next";
+import NavBar from "./components/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +18,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <AppRouterCacheProvider>
-          <AppThemeProvider>{children}</AppThemeProvider>
+          <AppThemeProvider>
+            <NavBar />
+            <main>{children}</main>
+          </AppThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
