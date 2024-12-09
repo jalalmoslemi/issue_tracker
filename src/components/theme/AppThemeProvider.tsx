@@ -11,7 +11,7 @@ interface Props {
 const AppThemeProvider = ({ children }: Props) => {
   return (
     <ThemeProvider theme={theme}>
-      <InitColorSchemeScript attribute="class" />
+      {/* <InitColorSchemeScript attribute="class" /> */}
       {children}
     </ThemeProvider>
   );

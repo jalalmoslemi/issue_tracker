@@ -2,7 +2,7 @@ import "./globals.css";
 import AppThemeProvider from "@/components/theme/AppThemeProvider";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import type { Metadata } from "next";
-import NavBar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
